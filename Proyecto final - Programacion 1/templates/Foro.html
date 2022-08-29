@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foro</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/estilo.css">
+</head>
+<body>
+        <!--Portada-->
+        <div class="titulo1">
+            <div class="wave">
+                <div class="titulo2">
+                    <span style="--l: 'F';">F</span>
+                    <span style="--l: 'o';">o</span>
+                    <span style="--l: 'r';">r</span>
+                    <span style="--l: 'o';">o</span>
+                    <span style="--l: 'T';">T</span>
+                    <span style="--l: 'o';">o</span>
+                </div>
+            </div>
+        </div>
+
+        <hr class="linea">
+
+        <div class="cuadro">
+            <P class="letra">Temas para el foro</P>
+        </div>
+
+        <!--Imagenes con link-->
+        <div class="linea1">
+            <div class="card" style="--i:url(https://img.freepik.com/foto-gratis/herramientas-deportivas_53876-138077.jpg)">
+                <div class="contenedor">
+                    <a class="enlace" href="{{url_for('Deporte')}}"><h2>Deporte</h2></a>
+                </div>
+            </div>
+
+            <div class="card" style="--i:url(https://statics-cuidateplus.marca.com/cms/styles/natural/azblob/2022-06/comida_2.jpg.webp?itok=pQimk99l)">
+                <div class="contenedor">
+                    <a class="enlace" href="{{url_for('Comida')}}"><h2>Comida</h2></a>
+                </div>
+            </div>
+
+            <div class="card" style="--i:url(https://s1.significados.com/foto/tecnologia-dura-fa.jpg)">
+                <div class="contenedor">
+                    <a class="enlace" href="{{url_for('Tecnologia')}}"><h2>Tecnologia</h2></a>
+                </div>
+            </div>
+
+            <div class="card" style="--i:url(https://img.remediosdigitales.com/934bbc/1366_2000/840_560.jpeg)">
+                <div class="contenedor">
+                    <a class="enlace" href="{{url_for('Pelicula')}}"><h2>pelicula</h2></a>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+</html>

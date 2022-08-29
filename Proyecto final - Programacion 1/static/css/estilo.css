@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: arial, helvetica;
+ }
+.titulo1{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background: -webkit-radial-gradient(#560e86, #0a0011);
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url(https://i.postimg.cc/FzZL5HWG/wave.png);
+    background-size: 1000px 100px;
+    animation: wave 20s linear infinite;
+}
+@keyframes wave{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+.titulo2{
+    margin-top: -300px;
+}
+.titulo2 span{
+    font-size: 120pt;
+    position: relative;
+    left: 420px;
+    font-weight: bold;
+    font-family: "fredoka one";
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.titulo2 span::before{
+    content: var(--l);
+    position: absolute;
+
+    transform: scale(1.1);
+    filter: blur(15px);
+}
+.titulo2 span::after{
+    content: var(--l);
+    position: absolute;
+    top: 80%;
+    left: 0;
+    filter: blur(30px);
+    transform: rotateX(50deg);
+}
+.titulo2 span:hover{
+    filter: contrast(250%);
+}
+.titulo2 span:nth-child(1){
+    color: #00bef8;
+}
+.titulo2 span:nth-child(2){
+    color: #ff0697;
+}
+.titulo2 span:nth-child(3){
+    color: #ff4d00;
+}
+.titulo2 span:nth-child(4){
+    color: #ffe600;
+}
+.titulo2 span:nth-child(5){
+    color: #bb00ff;
+}
+.titulo2 span:nth-child(6){
+    color: #00bef8;
+}
+section{
+    background: url(https://i.pinimg.com/originals/b1/72/8a/b1728a49ec07b79af0796beefe503bb9.gif) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 200px);
+}
+section::after{
+    content:"";
+    width: 100%;
+    min-height:67.8vh;
+    position:absolute;
+
+    left:0;
+    background:#000000;
+    opacity: 0.7;
+}
+h1{
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: -250px;
+    left: 8px;
+    font-family: helvetica;
+    font-size: 70px;
+    text-align: center;
+}
+.linea{
+    background-color: #000000;
+    width: 84%;
+    position: relative;
+    height: 4px;
+    border: none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+.cuadro{
+    width: 390px;
+    height: 50px;
+    position: relative;
+    background-color: #000000;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -25px;
+    margin-bottom: 100px;
+    border-radius: 5px; 
+}
+.letra{
+    color: #eee;
+    font-family: helvetica;
+    text-align: center;
+    font-size: 20px;
+    top: 15px;
+    position: relative;
+    letter-spacing: 2px;
+}
+.linea1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    margin: 55px;
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    background: var(--i);
+    position: relative;
+    background-size: cover;
+    box-shadow: 10px 15px 15px rgba(3, 32, 51, .8);
+    margin-top: -10px;
+}
+.contenedor{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(49, 3, 49, 0.8);
+    opacity: 0;
+    border-radius: 5px;
+    transition: .5s;
+}
+.contenedor a{
+    color: #eee;
+    width: 100%;
+    height: 100%;
+}
+.contenedor h2{
+    text-align: center;
+    margin-top: 70%;
+}
+.card:hover .contenedor{
+    opacity: 1;
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/mensaje.css">
+    <title>deporte</title>
+</head>
+<body>
+<div class="titulo1">
+    <div class="wave">
+        <div class="titulo2">
+            <span style="--l: 'Estas';">Estas </span>
+            <span style="--l: 'en';">en </span>
+            <span style="--l: 'la';">la </span>
+            <span style="--l: 'sección';">sección </span>
+            <span style="--l: 'de';">de </span>
+            <span style="--l: 'deporte';">deporte</span>
+        </div>
+    </div>
+</div>
+
+    <div class="cuadroInput">
+        <form action="/comentario/deporte" method="post">
+        <div>
+            <div class="titulo3">
+                <span style="--l: 'Ingresar';">Ingresar</span>
+                <span style="--l: 'comentario';">cometario</span>
+            </div>
+        </div>
+
+        <div class="cuadroAgg">
+            <input type="text" name="nombre" placeholder="Ingrese su nombre">
+        </div>
+
+        <div class="cuadroAgg">
+            <input type="text" name="duda" placeholder="Ingrese su comentario">
+        </div>
+
+        <div>
+            <button class="enviar" type="submit">Enviar comentario</button>
+        </div>
+        
+        </form>
+    </div>
+        {% for usuario in datos %}
+        <div class="mensaje">
+            <div>
+                <h1>{{usuario[0]}}</h1>
+                <br>
+                <span>Comentario: {{usuario[1]}}</span>
+            </div>
+        </div>
+        {% endfor %}
+
+</body>
+</html>
