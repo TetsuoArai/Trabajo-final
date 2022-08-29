@@ -20,7 +20,7 @@ Pasaremos con la parte funcional.
 
 ![image](https://user-images.githubusercontent.com/107661618/187115178-f26d6299-9bea-423b-b8c8-95b357ad086d.png)
 
-5. Para entrar el comentario de uno de los 4 temas solo debe darle click a al cuadro del tema que quiere.
+5. Para entrar el comentario de uno de los 4 temas solo debe darle click al cuadro del tema que quiere.
 
 ![image](https://user-images.githubusercontent.com/107661618/187115490-47da2ad1-27ea-476d-8d23-929679e36dbc.png)
 
